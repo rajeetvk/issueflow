@@ -138,3 +138,56 @@ The system shall record organization lifecycle events in the audit log.
 - Organization administrators cannot access other organizations.
 - Platform administrators can manage all organizations.
 - Deactivated organizations cannot access the platform.
+
+### 2.2.3 Department Management
+
+#### Description
+
+The Department Management module enables organizations to organize users into logical business units. Departments help structure workflows, assign responsibilities, manage permissions, and facilitate reporting within an organization.
+
+#### Objectives
+
+- Organize users into departments.
+- Support department-specific workflows.
+- Improve task assignment.
+- Simplify reporting.
+- Enable hierarchical business structures.
+
+#### Functional Requirements
+
+FR-DEPT-001  
+The system shall allow Organization Administrators to create departments.
+
+FR-DEPT-002  
+The system shall allow administrators to modify department information.
+
+FR-DEPT-003  
+The system shall allow administrators to deactivate departments.
+
+FR-DEPT-004  
+The system shall prevent deletion of departments containing active users.
+
+FR-DEPT-005  
+The system shall allow assigning managers to departments.
+
+FR-DEPT-006  
+The system shall allow users to belong to one or more departments.
+
+FR-DEPT-007  
+The system shall support department-specific workflows.
+
+FR-DEPT-008  
+The system shall maintain department-specific issue statistics.
+
+FR-DEPT-009  
+The system shall maintain department activity history.
+
+FR-DEPT-010  
+The system shall support department-level reporting.
+
+#### Business Rules
+
+- Departments belong to one organization only.
+- Department names must be unique within an organization.
+- Department managers must belong to the same organization.
+- Deleted departments cannot contain active users.
