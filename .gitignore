@@ -31,3 +31,6 @@ prisma/dev.db
 
 # Generated files
 *.tsbuildinfo
+
+# Reference Documentation
+Final_Project_Report.pdf
