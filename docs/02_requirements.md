@@ -191,3 +191,62 @@ The system shall support department-level reporting.
 - Department names must be unique within an organization.
 - Department managers must belong to the same organization.
 - Deleted departments cannot contain active users.
+
+### 2.2.4 User Management
+
+#### Description
+
+The User Management module manages user accounts throughout their lifecycle, including creation, updates, activation, deactivation, role assignments, and organizational membership.
+
+#### Objectives
+
+- Manage organizational users.
+- Maintain user profiles.
+- Control user status.
+- Support secure account management.
+- Facilitate user administration.
+
+#### Functional Requirements
+
+FR-USER-001  
+The system shall allow administrators to create user accounts.
+
+FR-USER-002  
+The system shall allow administrators to update user profiles.
+
+FR-USER-003  
+The system shall allow administrators to activate or deactivate users.
+
+FR-USER-004  
+The system shall prevent duplicate email addresses within the platform.
+
+FR-USER-005  
+The system shall allow assigning users to departments.
+
+FR-USER-006  
+The system shall allow assigning one or more roles to users.
+
+FR-USER-007  
+The system shall support profile picture uploads.
+
+FR-USER-008  
+The system shall maintain user activity history.
+
+FR-USER-009  
+The system shall allow users to update their own profiles.
+
+FR-USER-010  
+The system shall support password changes.
+
+FR-USER-011  
+The system shall notify users about account-related events.
+
+FR-USER-012  
+The system shall maintain audit records for all user management activities.
+
+#### Business Rules
+
+- Every user belongs to exactly one organization.
+- Email addresses must be unique.
+- Inactive users cannot authenticate.
+- Deleted users shall remain in historical records.
