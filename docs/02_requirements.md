@@ -37,3 +37,41 @@ The major functional modules of the system are:
 - Audit Logs
 - Search & Filtering
 - System Settings
+
+### 2.2.1 Authentication & Authorization
+
+#### Description
+
+The Authentication and Authorization module is responsible for verifying user identities and controlling access to system resources. It ensures that only authenticated and authorized users can perform actions based on their assigned roles and permissions.
+
+#### Functional Requirements
+
+FR-AUTH-001
+The system shall allow users to authenticate using their registered email address and password.
+
+FR-AUTH-002
+The system shall securely store user passwords using industry-standard hashing algorithms.
+
+FR-AUTH-003
+The system shall support secure session management using access tokens and refresh tokens.
+
+FR-AUTH-004
+The system shall allow authenticated users to log out and invalidate active sessions.
+
+FR-AUTH-005
+The system shall support password reset through email verification.
+
+FR-AUTH-006
+The system shall enforce Role-Based Access Control (RBAC) for all protected resources.
+
+FR-AUTH-007
+The system shall deny access to users without the required permissions.
+
+FR-AUTH-008
+The system shall maintain an audit trail of authentication-related events.
+
+FR-AUTH-009
+The system shall automatically expire inactive authentication sessions.
+
+FR-AUTH-010
+The system shall support multi-organization authentication while ensuring complete tenant isolation.
