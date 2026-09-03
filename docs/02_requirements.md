@@ -812,3 +812,69 @@ The system shall maintain immutable audit records.
 - Workflow transitions must follow configured rules.
 - Every issue activity shall be recorded for auditing.
 - Users may only access issues they are authorized to view.
+
+### 2.2.9 Comments & Activity History
+
+#### Description
+
+The Comments and Activity History module enables users to collaborate by exchanging comments, recording discussions, and maintaining a chronological history of all issue-related activities. This module ensures transparency, accountability, and traceability throughout the issue lifecycle.
+
+#### Objectives
+
+- Facilitate collaboration among users.
+- Maintain complete activity history.
+- Improve communication.
+- Support issue discussions.
+- Provide historical traceability.
+
+#### Functional Requirements
+
+FR-CMT-001
+The system shall allow authorized users to add comments to issues.
+
+FR-CMT-002
+The system shall allow users to edit their comments.
+
+FR-CMT-003
+The system shall allow users to delete comments according to permissions.
+
+FR-CMT-004
+The system shall support rich text formatting.
+
+FR-CMT-005
+The system shall support user mentions.
+
+FR-CMT-006
+The system shall notify mentioned users.
+
+FR-CMT-007
+The system shall display comments chronologically.
+
+FR-CMT-008
+The system shall record comment timestamps.
+
+FR-CMT-009
+The system shall record the author of each comment.
+
+FR-CMT-010
+The system shall maintain complete activity history including:
+- Issue creation
+- Updates
+- Status changes
+- Assignments
+- Workflow transitions
+- Attachments
+- Comments
+- Approvals
+
+FR-CMT-011
+The system shall prevent unauthorized modification of activity history.
+
+FR-CMT-012
+The system shall support filtering activity history.
+
+#### Business Rules
+
+- Activity history is immutable.
+- Every issue activity shall be timestamped.
+- Deleted comments shall remain available in audit logs.
