@@ -993,3 +993,60 @@ The system shall allow users to configure notification preferences.
 - Users receive only notifications they are authorized to view.
 - Notification preferences are user-specific.
 - Notification history shall be retained.
+
+### 2.2.12 Dashboard & Analytics
+
+#### Description
+
+The Dashboard and Analytics module provides visual insights into organizational performance, workflow efficiency, issue trends, SLA compliance, and operational metrics.
+
+#### Objectives
+
+- Improve decision-making.
+- Monitor workflow performance.
+- Identify operational bottlenecks.
+- Provide actionable insights.
+
+#### Functional Requirements
+
+FR-DASH-001
+The system shall display personalized dashboards.
+
+FR-DASH-002
+The system shall display issue statistics.
+
+FR-DASH-003
+The system shall display workflow statistics.
+
+FR-DASH-004
+The system shall display department performance.
+
+FR-DASH-005
+The system shall display team performance.
+
+FR-DASH-006
+The system shall display SLA compliance.
+
+FR-DASH-007
+The system shall display overdue issues.
+
+FR-DASH-008
+The system shall display issue trends.
+
+FR-DASH-009
+The system shall support configurable dashboard widgets.
+
+FR-DASH-010
+The system shall support filtering dashboard data.
+
+FR-DASH-011
+The system shall support exporting dashboard reports.
+
+FR-DASH-012
+The system shall refresh dashboard data automatically.
+
+#### Business Rules
+
+- Dashboard data shall respect user permissions.
+- Analytics shall be organization-specific.
+- Dashboard widgets shall be configurable.
