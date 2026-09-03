@@ -928,3 +928,68 @@ The system shall record attachment operations in the audit log.
 - Attachments belong to one issue.
 - Maximum file size shall be configurable.
 - File storage location shall be configurable.
+
+### 2.2.11 Notifications
+
+#### Description
+
+The Notification module informs users of important events occurring within the system. Notifications help users remain informed about issue updates, assignments, workflow transitions, approvals, SLA breaches, and other system activities.
+
+#### Objectives
+
+- Improve user awareness.
+- Reduce communication delays.
+- Increase workflow efficiency.
+
+#### Functional Requirements
+
+FR-NOT-001
+The system shall generate notifications for issue creation.
+
+FR-NOT-002
+The system shall notify assigned users.
+
+FR-NOT-003
+The system shall notify reassigned users.
+
+FR-NOT-004
+The system shall notify workflow transitions.
+
+FR-NOT-005
+The system shall notify approval requests.
+
+FR-NOT-006
+The system shall notify approval decisions.
+
+FR-NOT-007
+The system shall notify SLA warnings.
+
+FR-NOT-008
+The system shall notify SLA violations.
+
+FR-NOT-009
+The system shall notify mentioned users.
+
+FR-NOT-010
+The system shall notify issue watchers.
+
+FR-NOT-011
+The system shall support in-app notifications.
+
+FR-NOT-012
+The system shall support email notifications.
+
+FR-NOT-013
+The system shall allow users to mark notifications as read.
+
+FR-NOT-014
+The system shall maintain notification history.
+
+FR-NOT-015
+The system shall allow users to configure notification preferences.
+
+#### Business Rules
+
+- Users receive only notifications they are authorized to view.
+- Notification preferences are user-specific.
+- Notification history shall be retained.
