@@ -363,3 +363,196 @@ The system shall record all role and permission changes in the audit log.
 - Roles are scoped to an organization.
 - Default system roles cannot be deleted.
 - Permission changes shall take effect immediately.
+
+### 2.2.7 Workflow Management
+
+#### Description
+
+The Workflow Management module enables organizations to define, configure, and manage business workflows that control the lifecycle of issues and business processes. Workflows consist of configurable stages, statuses, transitions, approval rules, assignment rules, service-level agreements (SLAs), and automation rules.
+
+The module provides organizations with the flexibility to model their own business processes without modifying the application's source code.
+
+#### Objectives
+
+- Support configurable business workflows.
+- Eliminate hardcoded workflow logic.
+- Standardize business processes.
+- Improve process transparency.
+- Enable workflow automation.
+- Support approval-based business operations.
+
+#### Functional Requirements
+
+##### Workflow Template Management
+
+FR-WF-001  
+The system shall allow Organization Administrators to create workflow templates.
+
+FR-WF-002  
+The system shall allow administrators to update workflow templates.
+
+FR-WF-003  
+The system shall allow administrators to archive workflow templates.
+
+FR-WF-004  
+The system shall support multiple workflow templates within an organization.
+
+FR-WF-005  
+The system shall allow assigning workflow templates to departments or issue types.
+
+---
+
+##### Workflow Stages
+
+FR-WF-006  
+The system shall allow administrators to define workflow stages.
+
+FR-WF-007  
+The system shall allow administrators to arrange workflow stages in sequence.
+
+FR-WF-008  
+The system shall allow administrators to edit workflow stages.
+
+FR-WF-009  
+The system shall prevent duplicate stage names within the same workflow.
+
+FR-WF-010  
+The system shall support configurable start and end stages.
+
+---
+
+##### Workflow Status Management
+
+FR-WF-011  
+The system shall support configurable workflow statuses.
+
+FR-WF-012  
+The system shall allow associating statuses with workflow stages.
+
+FR-WF-013  
+The system shall support status categories such as Open, In Progress, Pending, Resolved, Closed, and Cancelled.
+
+FR-WF-014  
+The system shall allow organizations to define custom statuses.
+
+---
+
+##### Workflow Transitions
+
+FR-WF-015  
+The system shall allow administrators to configure valid transitions between workflow stages.
+
+FR-WF-016  
+The system shall prevent invalid workflow transitions.
+
+FR-WF-017  
+The system shall validate transition rules before changing workflow status.
+
+FR-WF-018  
+The system shall record every workflow transition in the activity history.
+
+---
+
+##### Approval Rules
+
+FR-WF-019  
+The system shall support single-level approval workflows.
+
+FR-WF-020  
+The system shall support multi-level approval workflows.
+
+FR-WF-021  
+The system shall allow assigning approvers based on roles.
+
+FR-WF-022  
+The system shall prevent workflow progression until required approvals are completed.
+
+FR-WF-023  
+The system shall notify approvers of pending approvals.
+
+---
+
+##### Assignment Rules
+
+FR-WF-024  
+The system shall allow automatic assignment of issues based on workflow rules.
+
+FR-WF-025  
+The system shall support manual reassignment of issues.
+
+FR-WF-026  
+The system shall support assignment to users, teams, or departments.
+
+---
+
+##### SLA Management
+
+FR-WF-027  
+The system shall allow administrators to define Service Level Agreement (SLA) policies.
+
+FR-WF-028  
+The system shall monitor SLA compliance for workflow stages.
+
+FR-WF-029  
+The system shall generate alerts before SLA violations occur.
+
+FR-WF-030  
+The system shall record SLA breaches.
+
+---
+
+##### Workflow Automation
+
+FR-WF-031  
+The system shall support event-based workflow automation.
+
+FR-WF-032  
+The system shall support time-based workflow automation.
+
+FR-WF-033  
+The system shall support automatic status updates.
+
+FR-WF-034  
+The system shall support automatic notifications triggered by workflow events.
+
+FR-WF-035  
+The system shall support configurable workflow actions.
+
+---
+
+##### Workflow Versioning
+
+FR-WF-036  
+The system shall maintain version history for workflow definitions.
+
+FR-WF-037  
+The system shall preserve workflow history for completed issues.
+
+FR-WF-038  
+The system shall allow administrators to activate new workflow versions.
+
+---
+
+##### Workflow Monitoring
+
+FR-WF-039  
+The system shall display workflow execution history.
+
+FR-WF-040  
+The system shall provide workflow performance statistics.
+
+FR-WF-041  
+The system shall generate workflow execution reports.
+
+FR-WF-042  
+The system shall record all workflow configuration changes in the audit log.
+
+#### Business Rules
+
+- Every workflow belongs to exactly one organization.
+- Every workflow must contain one Start stage.
+- Every workflow must contain at least one End stage.
+- Workflow transitions must follow configured transition rules.
+- Completed workflow instances cannot be modified.
+- Workflow templates may be reused across multiple departments.
+- Only authorized administrators may modify workflow definitions.
