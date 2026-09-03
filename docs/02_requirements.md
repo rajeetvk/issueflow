@@ -1248,3 +1248,69 @@ The system shall respect user permissions during searches.
 
 - Users shall only search resources they are authorized to access.
 - Search results shall be scoped to the user's organization.
+
+### 2.2.16 System Settings
+
+#### Description
+
+The System Settings module enables administrators to configure platform-wide and organization-specific settings that control system behavior, preferences, integrations, and operational parameters.
+
+#### Objectives
+
+- Centralize configuration.
+- Simplify administration.
+- Support organization customization.
+- Improve maintainability.
+
+#### Functional Requirements
+
+FR-SET-001
+The system shall allow Platform Administrators to configure global settings.
+
+FR-SET-002
+The system shall allow Organization Administrators to configure organization settings.
+
+FR-SET-003
+The system shall support organization branding.
+
+FR-SET-004
+The system shall support email configuration.
+
+FR-SET-005
+The system shall support notification configuration.
+
+FR-SET-006
+The system shall support password policy configuration.
+
+FR-SET-007
+The system shall support session timeout configuration.
+
+FR-SET-008
+The system shall support file upload limits.
+
+FR-SET-009
+The system shall support workflow defaults.
+
+FR-SET-010
+The system shall support localization settings.
+
+FR-SET-011
+The system shall support date and time format configuration.
+
+FR-SET-012
+The system shall support backup configuration.
+
+FR-SET-013
+The system shall support logging configuration.
+
+FR-SET-014
+The system shall record configuration changes.
+
+FR-SET-015
+The system shall validate configuration values before applying changes.
+
+#### Business Rules
+
+- Global settings affect the entire platform.
+- Organization settings override global settings where applicable.
+- Only authorized administrators may modify system settings.
