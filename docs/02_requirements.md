@@ -1050,3 +1050,70 @@ The system shall refresh dashboard data automatically.
 - Dashboard data shall respect user permissions.
 - Analytics shall be organization-specific.
 - Dashboard widgets shall be configurable.
+
+### 2.2.13 Reports
+
+#### Description
+
+The Reports module enables organizations to generate, view, and export operational, workflow, and performance reports. Reports support informed decision-making by presenting historical and real-time insights into organizational activities.
+
+#### Objectives
+
+- Generate operational reports.
+- Monitor organizational performance.
+- Support business analysis.
+- Facilitate compliance and auditing.
+- Enable data-driven decision making.
+
+#### Functional Requirements
+
+FR-REP-001
+The system shall generate issue reports.
+
+FR-REP-002
+The system shall generate workflow performance reports.
+
+FR-REP-003
+The system shall generate department performance reports.
+
+FR-REP-004
+The system shall generate team performance reports.
+
+FR-REP-005
+The system shall generate user activity reports.
+
+FR-REP-006
+The system shall generate SLA compliance reports.
+
+FR-REP-007
+The system shall generate audit reports.
+
+FR-REP-008
+The system shall support custom report filters.
+
+FR-REP-009
+The system shall support scheduled report generation.
+
+FR-REP-010
+The system shall export reports in PDF format.
+
+FR-REP-011
+The system shall export reports in Excel format.
+
+FR-REP-012
+The system shall export reports in CSV format.
+
+FR-REP-013
+The system shall support printing reports.
+
+FR-REP-014
+The system shall allow saving report templates.
+
+FR-REP-015
+The system shall allow sharing reports according to user permissions.
+
+#### Business Rules
+
+- Reports shall only include data accessible to the requesting user.
+- Report generation shall respect organization boundaries.
+- Report templates may be organization-specific.
