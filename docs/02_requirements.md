@@ -1183,3 +1183,68 @@ The system shall timestamp every audit event.
 - Audit records are immutable.
 - Only authorized users may access audit logs.
 - Audit records shall be retained according to system policy.
+
+### 2.2.15 Search & Filtering
+
+#### Description
+
+The Search and Filtering module enables users to quickly locate issues, users, workflows, departments, reports, and other system resources through keyword search and advanced filtering.
+
+#### Objectives
+
+- Improve information retrieval.
+- Increase productivity.
+- Reduce search time.
+- Simplify navigation.
+
+#### Functional Requirements
+
+FR-SRCH-001
+The system shall support global search.
+
+FR-SRCH-002
+The system shall support keyword search.
+
+FR-SRCH-003
+The system shall support advanced filtering.
+
+FR-SRCH-004
+The system shall support searching by issue identifier.
+
+FR-SRCH-005
+The system shall support searching by title.
+
+FR-SRCH-006
+The system shall support searching by assignee.
+
+FR-SRCH-007
+The system shall support searching by department.
+
+FR-SRCH-008
+The system shall support searching by workflow.
+
+FR-SRCH-009
+The system shall support searching by status.
+
+FR-SRCH-010
+The system shall support searching by priority.
+
+FR-SRCH-011
+The system shall support searching by date range.
+
+FR-SRCH-012
+The system shall allow combining multiple filters.
+
+FR-SRCH-013
+The system shall support sorting search results.
+
+FR-SRCH-014
+The system shall support pagination.
+
+FR-SRCH-015
+The system shall respect user permissions during searches.
+
+#### Business Rules
+
+- Users shall only search resources they are authorized to access.
+- Search results shall be scoped to the user's organization.
