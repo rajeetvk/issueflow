@@ -1117,3 +1117,69 @@ The system shall allow sharing reports according to user permissions.
 - Reports shall only include data accessible to the requesting user.
 - Report generation shall respect organization boundaries.
 - Report templates may be organization-specific.
+
+### 2.2.14 Audit Logs
+
+#### Description
+
+The Audit Logs module records significant system events and user activities to ensure accountability, transparency, compliance, and security. Audit logs provide a complete history of actions performed within the platform.
+
+#### Objectives
+
+- Maintain accountability.
+- Support security investigations.
+- Meet compliance requirements.
+- Preserve historical records.
+
+#### Functional Requirements
+
+FR-AUD-001
+The system shall record user authentication events.
+
+FR-AUD-002
+The system shall record authorization failures.
+
+FR-AUD-003
+The system shall record issue creation.
+
+FR-AUD-004
+The system shall record issue updates.
+
+FR-AUD-005
+The system shall record workflow transitions.
+
+FR-AUD-006
+The system shall record role and permission changes.
+
+FR-AUD-007
+The system shall record organization management activities.
+
+FR-AUD-008
+The system shall record department management activities.
+
+FR-AUD-009
+The system shall record user management activities.
+
+FR-AUD-010
+The system shall record configuration changes.
+
+FR-AUD-011
+The system shall support searching audit logs.
+
+FR-AUD-012
+The system shall support filtering audit logs.
+
+FR-AUD-013
+The system shall support exporting audit logs.
+
+FR-AUD-014
+The system shall prevent modification of audit records.
+
+FR-AUD-015
+The system shall timestamp every audit event.
+
+#### Business Rules
+
+- Audit records are immutable.
+- Only authorized users may access audit logs.
+- Audit records shall be retained according to system policy.
