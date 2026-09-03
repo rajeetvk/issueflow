@@ -250,3 +250,56 @@ The system shall maintain audit records for all user management activities.
 - Email addresses must be unique.
 - Inactive users cannot authenticate.
 - Deleted users shall remain in historical records.
+
+### 2.2.5 Team Management
+
+#### Description
+
+The Team Management module enables organizations to group users into teams for better collaboration, task assignment, and workflow execution. Teams may represent project groups, functional units, or temporary task forces within departments.
+
+#### Objectives
+
+- Organize users into collaborative teams.
+- Simplify issue assignment.
+- Improve workload distribution.
+- Support project-based collaboration.
+- Enhance team-level reporting.
+
+#### Functional Requirements
+
+FR-TEAM-001  
+The system shall allow Organization Administrators to create teams.
+
+FR-TEAM-002  
+The system shall allow administrators to update team information.
+
+FR-TEAM-003  
+The system shall allow administrators to archive or deactivate teams.
+
+FR-TEAM-004  
+The system shall allow administrators to assign users to one or more teams.
+
+FR-TEAM-005  
+The system shall allow administrators to assign a Team Leader.
+
+FR-TEAM-006  
+The system shall support assigning issues to teams.
+
+FR-TEAM-007  
+The system shall maintain team activity history.
+
+FR-TEAM-008  
+The system shall provide team performance statistics.
+
+FR-TEAM-009  
+The system shall allow searching and filtering teams.
+
+FR-TEAM-010  
+The system shall record all team management activities in the audit log.
+
+#### Business Rules
+
+- Every team belongs to one organization.
+- Team members must belong to the same organization.
+- A Team Leader must be an active member of the team.
+- Archived teams cannot receive new issues.
