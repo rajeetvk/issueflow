@@ -878,3 +878,53 @@ The system shall support filtering activity history.
 - Activity history is immutable.
 - Every issue activity shall be timestamped.
 - Deleted comments shall remain available in audit logs.
+
+### 2.2.10 File Attachments
+
+#### Description
+
+The File Attachments module enables users to upload, download, preview, and manage files associated with issues, comments, and workflow activities.
+
+#### Objectives
+
+- Support supporting documents.
+- Improve collaboration.
+- Maintain document traceability.
+
+#### Functional Requirements
+
+FR-ATT-001
+The system shall allow users to upload attachments.
+
+FR-ATT-002
+The system shall support multiple attachments.
+
+FR-ATT-003
+The system shall validate file size.
+
+FR-ATT-004
+The system shall validate file type.
+
+FR-ATT-005
+The system shall prevent uploading malicious files.
+
+FR-ATT-006
+The system shall allow downloading attachments.
+
+FR-ATT-007
+The system shall support previewing supported file formats.
+
+FR-ATT-008
+The system shall allow deleting attachments according to permissions.
+
+FR-ATT-009
+The system shall maintain attachment version history where applicable.
+
+FR-ATT-010
+The system shall record attachment operations in the audit log.
+
+#### Business Rules
+
+- Attachments belong to one issue.
+- Maximum file size shall be configurable.
+- File storage location shall be configurable.
