@@ -303,3 +303,63 @@ The system shall record all team management activities in the audit log.
 - Team members must belong to the same organization.
 - A Team Leader must be an active member of the team.
 - Archived teams cannot receive new issues.
+
+### 2.2.6 Role & Permission Management
+
+#### Description
+
+The Role and Permission Management module implements Role-Based Access Control (RBAC) to regulate user access throughout the platform. Permissions determine which operations users can perform, while roles provide a manageable way to assign collections of permissions.
+
+#### Objectives
+
+- Secure system resources.
+- Simplify permission management.
+- Support organization-specific roles.
+- Enforce least-privilege access.
+- Maintain secure administrative control.
+
+#### Functional Requirements
+
+FR-RBAC-001  
+The system shall allow Organization Administrators to create custom roles.
+
+FR-RBAC-002  
+The system shall allow administrators to update role information.
+
+FR-RBAC-003  
+The system shall allow administrators to archive custom roles.
+
+FR-RBAC-004  
+The system shall allow assigning multiple permissions to a role.
+
+FR-RBAC-005  
+The system shall allow assigning multiple roles to a user.
+
+FR-RBAC-006  
+The system shall verify user permissions before every protected operation.
+
+FR-RBAC-007  
+The system shall deny unauthorized access to protected resources.
+
+FR-RBAC-008  
+The system shall support system-defined default roles.
+
+FR-RBAC-009  
+The system shall support organization-specific custom roles.
+
+FR-RBAC-010  
+The system shall display only authorized menus and actions to users.
+
+FR-RBAC-011  
+The system shall maintain complete permission assignment history.
+
+FR-RBAC-012  
+The system shall record all role and permission changes in the audit log.
+
+#### Business Rules
+
+- Permissions are assigned to roles, not directly to users.
+- Users may have multiple roles.
+- Roles are scoped to an organization.
+- Default system roles cannot be deleted.
+- Permission changes shall take effect immediately.
